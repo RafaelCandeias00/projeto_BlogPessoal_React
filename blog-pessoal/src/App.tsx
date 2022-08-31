@@ -1,36 +1,15 @@
 import React from 'react';
-import './paginas/home/Home';
-import './App.css';
-import { Route } from 'react-router-dom';
-import { Grid } from '@material-ui/core'
 import Home from './paginas/home/Home';
+import Footer from './compenents/estaticos/footer/Footer';
+import Navbar from './compenents/estaticos/navbar/Navbar';
+import './App.css';
 
 function App() {
   return (
     <>
-      <Grid container spacing={3}>
-        <Grid item xs={12} sm={12}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Home />
-        </Grid>
-      </Grid>
+      <Navbar />
+      <Home />
+      <Footer />
     </>
   );
 }

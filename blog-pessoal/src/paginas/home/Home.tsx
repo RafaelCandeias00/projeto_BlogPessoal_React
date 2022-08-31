@@ -1,28 +1,32 @@
-import React from "react";
-import { Paper, Box, Button } from '@material-ui/core';
-import './Home.css';
+import React from 'react';
+import { Typography, Box, Grid, Button, Paper } from '@material-ui/core';
+import './Home.css'
 
 function Home() {
-    return (
-        <>
-            <Paper>
-                <Box p={2}>
-                    <Box display={"flex"} justifyContent="center">
-                        <h1>Título</h1>
-                    </Box>
-                    <img src="https://pixabay.com/images/id-7413333/" alt="" style={{ width: "100%"}} height="100%"/>
-                    <Box p={2} display={"flex"} justifyContent="center">
-                        <Button variant="contained" color="primary">
-                            Texto 1
-                        </Button>
-                        <Button variant="contained" color="secondary">
-                            Texto 2
-                        </Button>
-                    </Box>
-                </Box>
-            </Paper>
-        </>
-    );
+  return (
+    <>
+        <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#3F51B5" }}>
+          <Grid alignItems="center" item xs={6}>
+            <Box paddingX={20} >
+              <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Seja bem vindo(a)!</Typography>
+              <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>expresse aqui os seus pensamentos e opiniões!</Typography>
+            </Box>
+            <Box component="div" display="flex" justifyContent="center">
+              <Box component="div" marginRight={1}>
+              </Box>
+              <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#3F51B5", color: "white" }}>Ver Postagens</Button>
+            </Box>
+          </Grid>
+          <Grid item xs={6} >
+            <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
+          </Grid>
+          <Grid xs={12} style={{ backgroundColor: "white" }}>
+          </Grid>
+        </Grid>
+    </>
+  );
 }
 
-export default Home;
+
+
+export default Home
