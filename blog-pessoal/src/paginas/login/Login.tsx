@@ -11,7 +11,7 @@ function Login(){
             <Grid alignItems="center" xs={6}>
                 <Box paddingX={20}>
                     <form>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ fontWeight: "bold"}}>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="textos1">
                             Entrar
                         </Typography>
 
@@ -33,22 +33,16 @@ function Login(){
                                 Não tem uma conta?
                             </Typography>
                         </Box>
-                        <Typography variant="subtitle1" gutterBottom align="center" style={{ fontWeight: "bold" }}>
+                        <Typography variant="subtitle1" gutterBottom align="center" className="textos1">
                             Cadastra-se
                         </Typography>
                     </Box>
                 </Box>
             </Grid>
-            <Grid xs={6} style={{
-                backgroundImage: `url(https://i.imgur.com/d5bMdDJ.jpg)`,
-                backgroundRepeat: "no-repeat",
-                width: "100vh",
-                minHeight: "100vh",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
-            }}>
 
+            <Grid xs={6} className="imagem">
             </Grid>
+
         </Grid>
     );
 }
