@@ -33,9 +33,11 @@ function Login(){
                                 Não tem uma conta?
                             </Typography>
                         </Box>
-                        <Typography variant="subtitle1" gutterBottom align="center" className="textos1">
-                            Cadastra-se
-                        </Typography>
+                        <Link to="/cadastrousuario" className="text-decorator-none">
+                            <Typography variant="subtitle1" gutterBottom align="center" className="textos1">
+                                Cadastra-se
+                            </Typography>
+                        </Link>
                     </Box>
                 </Box>
             </Grid>
