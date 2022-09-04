@@ -6,7 +6,7 @@ import './Login.css';
 import { Link, useNavigate } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
 import UserLogin from "../../models/UserLogin";
-import { api } from "../../services/Service";
+import { login } from "../../services/Service";
 
 function Login() {
 
@@ -38,8 +38,8 @@ function Login() {
         e.preventDefault();
 
         try{
-            const resposta = await api.post(`/usuarios/logar`, userLogin)
-            setToken(resposta.data.token)
+            await login(`/usuarios/logar`, userLogin, setToken)
+
             alert("Usuário logado com sucesso!")
         }
         catch(error)
