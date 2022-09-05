@@ -6,6 +6,8 @@ import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import Footer from './compenents/estaticos/footer/Footer';
 import Navbar from './compenents/estaticos/navbar/Navbar';
 import './App.css';
+import ListaTema from './compenents/temas/listatema/ListaTema';
+import ListaPostagem from './compenents/postagens/listapostagem/ListaPostagem';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+          <Route path="/temas" element={<ListaTema />} />
+          <Route path="/posts" element={<ListaPostagem />} />
         </Routes>
       </div>
       <Footer />
