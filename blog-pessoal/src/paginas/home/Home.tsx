@@ -1,7 +1,8 @@
 import React from 'react';
-import { Typography, Grid, Button, Paper } from '@material-ui/core';
+import { Typography, Grid, Button} from '@material-ui/core';
 import { Box } from '@mui/material';
 import './Home.css';
+import TabPostagem from '../../compenents/postagens/tabpostagem/TabPostagem';
 
 function Home() {
   return (
@@ -12,8 +13,8 @@ function Home() {
             <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="titulo">Seja bem vindo(a)!</Typography>
             <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Expresse aqui os seus pensamentos e opiniões!</Typography>
           </Box>
-          <Box component="div" display="flex" justifyContent="center">
-            <Box component="div" marginRight={1}>
+          <Box display="flex" justifyContent="center">
+            <Box marginRight={1}>
             </Box>
             <Button variant="outlined" className="botao">Ver Postagens</Button>
           </Box>
@@ -22,6 +23,7 @@ function Home() {
           <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
         </Grid>
         <Grid xs={12} className="postagens">
+          <TabPostagem />
         </Grid>
       </Grid>
     </>
