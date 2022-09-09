@@ -8,6 +8,10 @@ import Navbar from './compenents/estaticos/navbar/Navbar';
 import './App.css';
 import ListaTema from './compenents/temas/listatema/ListaTema';
 import ListaPostagem from './compenents/postagens/listapostagem/ListaPostagem';
+import CadastroPost from './compenents/postagens/cadastroPost/CadastroPost';
+import CadastroTema from './compenents/temas/cadastroTema/CadastroTema';
+import DeletarPostagem from './compenents/postagens/deletarPostagem/DeletarPostagem';
+import DeletarTema from './compenents/temas/deletarTema/DeletarTema';
 
 function App() {
   return (
@@ -21,6 +25,15 @@ function App() {
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
           <Route path="/temas" element={<ListaTema />} />
           <Route path="/posts" element={<ListaPostagem />} />
+
+          <Route path="/formularioPostagem" element={<CadastroPost />} />
+          <Route path="/formularioPostagem/:id" element={<CadastroPost />} />
+
+          <Route path="/formularioTema" element={<CadastroTema />} />
+          <Route path="/formularioPTema/:id" element={<CadastroTema />} />
+
+          <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+          <Route path="/deletarTema/:id" element={<DeletarTema />} />
         </Routes>
       </div>
       <Footer />
